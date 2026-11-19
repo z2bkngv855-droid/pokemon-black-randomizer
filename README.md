@@ -23,3 +23,7 @@ La page actuelle ne reçoit ni n'envoie de ROM. La future intégration devra pri
 ## Licence
 
 Le projet Universal Pokémon Randomizer ZX est sous GPL-3.0-or-later. Toute intégration de son code devra conserver les notices et obligations de licence applicables. Pokémon et les marques associées appartiennent à leurs ayants droit.
+
+
+## Publication
+Le déploiement GitHub Pages est configuré via GitHub Actions.
