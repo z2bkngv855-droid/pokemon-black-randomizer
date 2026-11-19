@@ -11,8 +11,9 @@ Le moteur de randomisation doit être intégré et testé sur la ROM française 
 ## Objectif fonctionnel
 
 - Pokémon Noir / Blanc (génération V)
-- Starters, rencontres sauvages, équipes de dresseurs et légendaires
-- Talents, statistiques et évolutions
+- Starters, rencontres sauvages, Pokémon statiques, équipes de dresseurs et légendaires
+- Talents, statistiques, types et évolutions
+- Attaques : capacités apprises par niveau, puissance, précision, PP, type et catégorie physique/spéciale ; attaques des équipes de dresseurs et compatibilité TM/tutoriels selon les options du moteur
 - EV/IV : traitement spécifique à valider, car ce n'est pas une option standard du moteur UPR-ZX
 - ROM fournie par l'utilisateur, jamais incluse dans le dépôt
 
@@ -27,3 +28,14 @@ Le projet Universal Pokémon Randomizer ZX est sous GPL-3.0-or-later. Toute int�
 
 ## Publication
 Le déploiement GitHub Pages est configuré via GitHub Actions.
+
+## Critères de validation avant annonce « prêt »
+
+- [ ] Le moteur tourne dans le navigateur mobile et traite la ROM localement.
+- [ ] Pokémon Noir français identifié par son empreinte/version (IRBF) ; aucune compatibilité ne sera annoncée avant test réel.
+- [ ] Les attaques apprises par niveau et les paramètres des attaques sont randomisés selon les options sélectionnées.
+- [ ] Les attaques indispensables à la progression (notamment capacités de terrain / scripts) sont protégées ou remplacées de façon sûre.
+- [ ] Starters, rencontres, Pokémon statiques, équipes de dresseurs, talents, stats, types, évolutions et objets passent des tests de non-corruption.
+- [ ] Le fichier `.nds` généré se télécharge, s'ouvre dans un émulateur DS et passe un test de démarrage / sauvegarde.
+- [ ] Les EV/IV sont soit réellement intégrés et testés, soit clairement signalés comme non pris en charge ; aucune promesse fictive.
+- [ ] Aucune ROM utilisateur n'est envoyée au serveur ou commitée dans GitHub.
